@@ -1,0 +1,85 @@
+<html>
+
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset-utf-8"/>
+        <title>Meine Webseite</title>
+        <style type="text/css">
+            p {
+                color:blue;
+                font-size: 22;
+                
+            }
+            .red{
+                color: red;
+            }
+            .large{
+                font-size: 30
+            }
+            #green{
+                color: green;
+            }
+            .unterstrichen{
+                text-decoration: underline;
+            }
+            #ersterdiv{
+                color: yellow;
+                background-color: aqua;
+                width: 300px;
+                float: right;
+            }
+            #zweiterdiv{
+                color: chartreuse;
+                background-color: brown;
+                width: 300px;
+                margin: 100px;
+            }
+            .clear-float{
+                clear: both;
+            }
+            .dritterdiv{
+                position: absolute;
+                left: 100px;
+                top: 100px;
+                z-index: 1;
+            }
+            .fdiv{
+                background-color: chartreuse;
+                padding: 20px;
+                
+            }
+        </style>
+        
+    
+    </head>
+
+    <body>
+        <div id="ersterdiv">
+            <p>Alle wege füren nach Rom</p>
+            <p>Hallo wie gehts</p>
+        </div>
+        <div id="zweiterdiv">
+            <p class="red">Classen verwenden um zu stylen</p>
+            <p class="large">Mal sehen wie das so ist</p>
+            <P id="green">Nur um das eine p anzusteuern benutzt man id<span class="unterstrichen"> der innere span überschreibt alles</span></P> 
+        </div>
+        <div>
+            <p class="clear-float">Alle floats löschen</p>
+        </div>
+        <div class="dritterdiv">
+            <p>Text der genau positioniert ist</p>
+            <p>Noch weiterer text</p>
+        </div>
+        <div class="fdiv">
+            <p>4terdiv</p>
+            <p>blablablablabla</p>
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        
+    </body>
+</html>

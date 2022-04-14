@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+<head>
+ <title>Tests</title>
+ <meta charset="utf-8" />
+ <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    
+    
+    <script src="jquery-3.5.1.min.js"></script>
+    
+    <style type="text/css">
+        
+        #kreis{
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background-color: green;
+            margin: 10px;
+            float: left;
+        }
+        .viereck{
+            width: 150px;
+            height: 150px;
+            background-color: red;
+            margin: 10px;
+            float: left;
+        }
+        #test{
+            position: absolute;
+            margin-top: 200px;
+        }
+        #a{
+            float: left;
+            position: absolute;
+            margin-top: 250px;
+        }
+        #kreis2{
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background-color: aqua;
+            position: absolute;
+            margin-top: 350px;
+        }
+    </style>
+    
+
+    
+    
+</head>
+    <body>
+       
+       
+        <div id="kreis"></div>
+        <div class="viereck"></div>
+        <p id="test">Das ist text</p>
+        <div id="a">
+            <p id="weg">Text der verschwinden soll</p>
+            <button id="button">weg damit</button>
+        </div>
+        <div id="kreis2"></div>
+        
+        <script type="text/javascript">     
+            $("#kreis").click(function(){       // Wenn der kreis angeklickt wird dann wird alert ausgeführt
+                alert("Kreis wurde angeklickt");
+            });
+            $("#kreis").click(function(){       // Wenn der kreis angeklickt wurde wird er rot
+                $("#kreis").css("background-color", "red");
+            });
+            $(".viereck").hover(function(){   // Wenn über das Viereck gefahren wird wird alert ausgeführt
+               alert($("p").html()); 
+            });
+            
+            // Text verschwinden lassen und wieder aufrufen 
+            var textAktiv = true;
+            $("#button").click(function(){
+                if(textAktiv){
+                   $("#weg").fadeOut(function(){
+                       textAktiv = false;
+                   }); 
+                }else{
+                    $("#weg").fadeIn(function(){
+                        textAktiv = true;
+                    });
+                }
+            });
+            
+            //Kreis soll sich bewgen
+            $("#kreis2").click(function(){
+                $(this).animate({
+                    width:"400px"
+                },2000)
+                
+            });
+            
+            
+
+        </script> 
+        
+        
+    </body>
+</html>
