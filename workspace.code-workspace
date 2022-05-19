@@ -1,0 +1,31 @@
+{
+	"folders": [
+		{
+			"path": "1-html"
+		},
+		{
+			"path": "2-css"
+		},
+		{
+			"path": "3-JavaScript"
+		},
+		{
+			"path": "4-Bootstrap"
+		},
+		{
+			"path": "5-jQuery"
+		},
+		{
+			"path": "Aufgabe1"
+		},
+		{
+			"path": "AufgabeHs"
+		},
+		{
+			"path": "JavaSkript"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "JavaSkript"
+	}
+}

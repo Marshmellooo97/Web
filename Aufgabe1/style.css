@@ -1,0 +1,49 @@
+.grey{
+    background-color: gainsboro;
+}
+
+.dark{
+    background-color: darkgray;
+}
+.white{
+    background-color: aliceblue;
+}
+.abstand{
+    margin: 7%;
+}
+.abstandUnten{
+    margin-top: 10px;
+}
+.mitte{
+    text-align: center;
+    margin: auto;
+}
+#mitte{
+    text-align: center;
+    margin: auto;
+}
+.flex{
+    width:30%;
+    margin: auto;
+}
+#links{
+    position: fixed;
+    text-align: left;
+}
+#rechts{
+    text-align: right;
+}
+.rund{
+    border-radius: 5px;
+    border: 1px solid black;
+    
+}
+.abstandKlein{
+    margin: 4%;
+}
+.eingabe{
+    text-align: left;
+    width: 200px;
+    margin-left: 60px;
+    margin: 6%;
+}

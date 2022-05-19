@@ -1,0 +1,35 @@
+
+.flex{
+
+}
+
+.header{
+    text-align: center;
+    border-bottom: 1px solid black;
+    background-color: gray;
+    color: white;
+}
+.nav{
+    text-align: left;
+    width: 7.5em;
+    position: absolute;
+    float: left;
+    color: white;
+    background-color: grey;
+}
+.main{
+    text-align: left;
+    position: relative;
+    left: 170px;
+    
+}
+.footer{
+    text-align: center;
+    border-top: 1px solid black;
+    background-color: gray;
+    color: white;
+    height: 2em;
+}
+.navItem{
+    margin-bottom: 10px;
+}

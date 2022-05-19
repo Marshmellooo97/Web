@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <div class="grey flex" id="links">
+
+
+        <h1>BMI-Rechner</h1>
+        <div class="abstandKlein">
+            <form action="https://vulcan.informatik.hs-fulda.de/bmi_berechnen.php" method="get">
+                <fieldset class="dark rund">
+                    <legend class="rund grey">Angaben zur BMI-Berechnung</legend>
+                    <div class="abstand ">
+                        <div class="abstand">
+                            <label for="lableGewicht" class="abstandUnten">Gewicht</label>
+                            <input class="mitte" type="number" placeholder="gewicht" name="gewicht" id="lableGewicht">
+                            <br>
+                        </div>
+                        <div class="abstand">
+                            <label for="lableGröße" class="abstandUnten">Größe</label>
+                            <input class="mitte" type="number" placeholder="groesse" name="groesse" id="lableGröße">
+
+                        </div>
+
+                    </div>
+                    <div class="abstand">
+                        <fieldset class="white rund">
+                            <legend class="rund grey">Geschlecht</legend>
+                            <p>
+                                <input type="radio" name="geschlecht"> Männlich <input type="radio" name="geschlecht">
+                                Weiblich <input type="radio" name="geschlecht"> Sontiges
+                            </p>
+                        </fieldset>
+                    </div>
+                    <div class="eingabe">
+                        <div class="eingabe">
+                            <label for="lableE-Mail">E-Mail</label>
+                            <input class="mitte" type="email" placeholder="E-Mail" name="Email" id="lableE-Mail"> <br>
+                        </div>
+                        <div class="eingabe">
+                            <label for="labelName">Name</label>
+                            <input class="mitte" type="text" placeholder="Name" name="Benutzer-name" id="labelName"> <br>
+                        </div>
+                        <div class="eingabe">
+                            <label for="labelPasswort">Passwort</label>
+                            <input class="mitte" type="password" placeholder="Passwort" name="Benutzer-passwort" id="labelPasswort">
+                            <br>
+                        </div>
+
+                    </div>
+                    <div id="rechts" class="abstand">
+                        <p><input type="submit" value="Absenden"> <input type="reset" value="Zurücksetzten"></p>
+                    </div>
+            </form>
+            </fieldset>
+        </div>
+
+        <p>Ihr Body Mass Index beträgt___.</p>
+    </div>
+</body>
+
+</html>
