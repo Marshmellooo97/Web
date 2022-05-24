@@ -23,9 +23,12 @@
 		},
 		{
 			"path": "JavaSkript"
+		},
+		{
+			"path": "Aufgabe5"
 		}
 	],
 	"settings": {
-		"liveServer.settings.multiRootWorkspaceName": "JavaSkript"
+		"liveServer.settings.multiRootWorkspaceName": "Aufgabe5"
 	}
 }
