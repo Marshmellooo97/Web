@@ -24,9 +24,15 @@ document.getElementById("button").addEventListener("click", function(){
     let body = document.createElement("body")
 
     let tr = document.createElement("tr")
-    for(head in mitglieder[0])
-
-
+    let th = document.createAttribute("th")
+    for(let head in mitglieder[0]){
+        console.log(head)
+        th.innerHTML = "Bla"
+        tr.appendChild(th)
+    }
+    thead.appendChild(tr)
+    tabelle.appendChild(thead)
+    /*
     for(let i = 0; i < mitglieder.length; i++){
         let tr = document.createElement("tr")
         for(let j = 0; j < 4; j++){
@@ -37,5 +43,6 @@ document.getElementById("button").addEventListener("click", function(){
         }
         tabelle.appendChild(tr)
     }
+    */
     darein.appendChild(tabelle)
 })
