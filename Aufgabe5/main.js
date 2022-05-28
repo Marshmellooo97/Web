@@ -24,8 +24,9 @@ document.getElementById("button").addEventListener("click", function(){
     let body = document.createElement("body")
 
     let tr = document.createElement("tr")
-    let th = document.createAttribute("th")
+    //let th = document.createAttribute("th")
     for(let head in mitglieder[0]){
+        let th = document.createAttribute("th")
         console.log(head)
         th.innerHTML = "Bla"
         tr.appendChild(th)
