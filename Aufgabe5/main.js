@@ -1,49 +1,70 @@
 
 console.log("Hallo")
 
-let mitglieder = [
+const mitglieder = [
     {
         name : "Smith",
-        vorname : "John",
+        vorname: "John",
         email : "foo@bar.com"
     },
     {
         name : "Doe",
-        vorname : "Jane",
+        vorname: "Jane",
         email : "jane@doe.org"
+    },
+    {
+        name: "Mustermann",
+        vorname: "Max",
+        email: "max@mustermann.de"
+    },
+    {
+        name: "Smith",
+        vorname: "John",
+        email: "foo@bar.com"
     }
 ]
 
 
 console.log(mitglieder.length)
 
-document.getElementById("button").addEventListener("click", function(){
+document.getElementById("button").addEventListener("click", () => {
     let darein = document.getElementById("darein")
     let tabelle = document.createElement("table")
     let thead = document.createElement("thead")
-    let body = document.createElement("body")
+    let tbody = document.createElement("tbody")
+    let trHead = document.createElement("tr")
 
-    let tr = document.createElement("tr")
-    //let th = document.createAttribute("th")
     for(let head in mitglieder[0]){
-        let th = document.createAttribute("th")
+        let th = document.createElement("th")
         console.log(head)
-        th.innerHTML = "Bla"
-        tr.appendChild(th)
+        th.innerHTML = head
+        trHead.appendChild(th)
     }
-    thead.appendChild(tr)
+    let th = document.createElement("th")
+    th.innerHTML = "Hinzufügen"
+    trHead.appendChild(th)
+    thead.appendChild(trHead)
     tabelle.appendChild(thead)
-    /*
-    for(let i = 0; i < mitglieder.length; i++){
-        let tr = document.createElement("tr")
-        for(let j = 0; j < 4; j++){
-            var td = document.createElement("td")
-            var text = document.createTextNode("Bla")
-            td.innerHTML("text")
-            tr.appendChild(td)
+
+    for(let i in mitglieder){
+        let trBody = document.createElement("tr")
+        console.log(mitglieder)
+        let row = mitglieder[i]
+        for(value in mitglieder[i]){
+            let td = document.createElement("td")
+            console.log(row[value])
+            td.innerHTML = row[value]
+            trBody.appendChild(td)
         }
-        tabelle.appendChild(tr)
+
+        let buttonHinzu = document.createElement("button")
+        let buttonDelet = document.createElement("button")
+        buttonHinzu.innerHTML = "Hinzufügen"
+        buttonDelet.innerHTML = "Löschen"
+        trBody.appendChild(buttonHinzu)
+        trBody.appendChild(buttonDelet)
+        tbody.appendChild(trBody)
     }
-    */
+    tabelle.appendChild(tbody)
     darein.appendChild(tabelle)
 })
