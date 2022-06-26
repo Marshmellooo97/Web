@@ -64,6 +64,19 @@ document.getElementById("button").addEventListener("click", () => {
         trBody.appendChild(buttonHinzu)
         trBody.appendChild(buttonDelet)
         tbody.appendChild(trBody)
+
+        let person = mitglieder[i]["vorname"] + " " + mitglieder[i]["name"]
+        buttonHinzu.addEventListener("click", function() {
+            let hinzu = document.createElement("li")
+            hinzu.setAttribute("class", i)
+            console.log(person)
+            document.getElementById("gruppe").appendChild(hinzu).innerHTML = person
+        })
+        buttonDelet.addEventListener("click", function(){
+            let li = document.getElementById(i)
+            console.log(li)
+            document.getElementById("gruppe").removeChild(li)
+        })
     }
     tabelle.appendChild(tbody)
     darein.appendChild(tabelle)
