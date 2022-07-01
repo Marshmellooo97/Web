@@ -28,7 +28,11 @@
 			"path": "Aufgabe5"
 		},
 		{
+<<<<<<< HEAD
 			"path": "Aufgabe6"
+=======
+			"path": "..\\..\\..\\Users\\justi\\Desktop\\Test"
+>>>>>>> 1eba5cae3d5fbbb11e6cc07447bef10b728434fd
 		}
 	],
 	"settings": {
