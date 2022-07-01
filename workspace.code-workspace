@@ -28,7 +28,11 @@
 			"path": "Aufgabe5"
 		},
 		{
+<<<<<<< HEAD
+			"path": "Aufgabe6"
+=======
 			"path": "..\\..\\..\\Users\\justi\\Desktop\\Test"
+<<<<<<< HEAD
 		},
 		{
 			"path": "ÜbungLernen"
@@ -36,5 +40,12 @@
 	],
 	"settings": {
 		"liveServer.settings.multiRootWorkspaceName": "ÜbungLernen"
+=======
+>>>>>>> 1eba5cae3d5fbbb11e6cc07447bef10b728434fd
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Aufgabe6"
+>>>>>>> 973a6efba8c35fb920eec1e7101b91e701035205
 	}
 }

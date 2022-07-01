@@ -50,11 +50,16 @@
                         </div>
                         <div class="eingabe">
                             <label for="labelName">Name</label>
-                            <input class="mitte" type="text" placeholder="Name" name="Benutzer-name" id="labelName"> <br>
+                            <input class="mitte" type="text" placeholder="Name" name="Benutzer-name" id="labelName" required pattern="^[A-Z]{1,1}[a-z]{1,}\s[A-Z]{1,1}[a-z]{1,}$"> <br>
                         </div>
                         <div class="eingabe">
                             <label for="labelPasswort">Passwort</label>
                             <input class="mitte" type="password" placeholder="Passwort" name="Benutzer-passwort" id="labelPasswort">
+                            <br>
+                        </div>
+                        <div class="eingabe">
+                            <label for="labelPasswort">Anmerkung</label>
+                            <textarea name="anmerkung" id="anmerkung" cols="30" rows="10" ></textarea>
                             <br>
                         </div>
 
@@ -62,6 +67,7 @@
                     <div id="rechts" class="abstand">
                         <p><input  type="submit" value="Absenden"> <input type="reset" value="Zurücksetzten"></p>
                         <p><input id="berechnen" type="button" value="Berechnen mit JS"></p>
+                        <p><input id="ajax" type="button" value="Berechnen ajax"></p>
                     </div>
             </form>
             </fieldset>
