@@ -1,0 +1,9 @@
+{
+    "name":"Justin",
+    "alter": 18,
+    "Info": {
+        "Straße": "Bla",
+        "Test": 12
+    },
+    "Arr": [1,2,3,4]
+}
