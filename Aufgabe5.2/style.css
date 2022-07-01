@@ -1,0 +1,35 @@
+
+.addclass{
+    font-size: 0.6em;
+    border: 1px solid black;
+    border-radius: 10%;
+    position: relative;
+    bottom: 0.2em;
+    right: 0.2em;
+    
+}
+.removeclass{
+   
+    font-size: 0.6em;
+    border: 1px solid black;
+    border-radius: 10%;
+    position: relative;
+    bottom: 0.2em;
+    left: 0.4em;
+}
+.hellgrau{
+    background-color: lightgray;
+}
+#tabellemain{
+    border: 1px solid black;
+    
+}
+th{
+    border: 1px solid black;
+    padding: 0.4em;
+    background-color: lightgray;
+}
+td{
+    border: 1px solid black;
+    padding: 0.4em;
+}

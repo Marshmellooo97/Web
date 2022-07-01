@@ -26,9 +26,12 @@
 		},
 		{
 			"path": "Aufgabe5"
+		},
+		{
+			"path": "Aufgabe6"
 		}
 	],
 	"settings": {
-		"liveServer.settings.multiRootWorkspaceName": "Aufgabe5"
+		"liveServer.settings.multiRootWorkspaceName": "Aufgabe6"
 	}
 }

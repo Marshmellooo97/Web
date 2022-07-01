@@ -1,0 +1,61 @@
+<html>
+
+<head>
+    <style>
+        .schiebbar {
+            position: absolute;
+            z-index: 1;
+            width: 150px;
+            height: 80px;
+            left: 50px;
+            top: 50px;
+            background-color: #F6E3CE;
+            border: 2px solid black;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="schiebbar" id="myDiv">
+    </div>
+    <span>
+    </span>
+
+    <script>
+        "use strict";
+
+        var elem = document.getElementById("myDiv");
+        var dragging = false;
+        var lastX, lastY;
+        console.log("Bla")
+        elem.addEventListener("mousedown", function (evt) {
+            dragging = true;
+            lastX = evt.clientX;
+            lastY = evt.clientY;
+            console.log("Ja onmousedown funktioniert")
+        }, false);
+        elem.addEventListener("mousemove", function (evt) {
+            if (dragging) {
+                var style = window.getComputedStyle(elem, null);
+                var posx = parseInt(style.getPropertyValue("left"));
+                var posy = parseInt(style.getPropertyValue("top"));
+                var x = evt.clientX;
+                var y = evt.clientY;
+                var dx = x - lastX;
+                var dy = y - lastY;
+                elem.style.left = (posx + dx) + "px";
+                elem.style.top = (posy + dy) + "px";
+                lastX = x;
+                lastY = y;
+                console.log("Ja mousemove funktioniert")
+            }
+        }, false);
+        elem.addEventListener("mouseup", function (evt) {
+            dragging = false;
+        })
+
+    </script>
+</body>
+
+</html>

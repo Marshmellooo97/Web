@@ -15,6 +15,9 @@ let mitglieder = [
 ]
 
 
+
+
+
 console.log(mitglieder.length)
 
 document.getElementById("button").addEventListener("click", function(){

@@ -1,0 +1,8 @@
+{
+    "name": "Name1",
+    "vorname": "Vorname1",
+    "Mail": "email",
+    "Weitere": {
+        "test":"bla",
+        "test2": "bla2"}
+}
