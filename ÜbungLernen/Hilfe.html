@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="main.js" type="text/javascript"></script>
+    <title>Document</title>
+</head>
+<style>
+    #nachrichten{position: absolute;top: 100px;margin: auto;height: auto;width: 1050px;background-color: white;}
+</style>
+<body>
+    <p style="color :blue"><b>fetter</b> <em>kursiver</em> <ins>unterstrichen</ins></p>
+    <a href="http://www.google.de" >hier klicken um zu google kommen </a>
+    <ul><li>Punkt 1</li><li>Punkt 2</li></ul>
+    <ol start="10" type="I"><li>Punkt 1</li><li>Punkt 2</li></ol>
+    <table><thead><tr><th>Überschrift</th><th>Überschrift</th></tr></thead>
+        <tbody><tr><td>Reihe1 spalte 1</td><td>Reihe1 spalte 2</td></tr>
+            <tr><td>Reihe2 spalte 1</td><td>Reihe2 spalte 2</td></tr></tbody></table>
+    <form action="https://vulcan.informatik.hs-fulda.de/bmi_berechnen.php" method="get">
+    <label for="lableGewicht" class="abstandUnten">Gewicht</label>
+    <input class="mitte" type="number" placeholder="gewicht" name="gewicht" id="lableGewicht">
+    <input  type="submit" value="Absenden"> <input type="reset" value="Zurücksetzten">
+    <input id="berechnen" type="button" value="Berechnen mit JS"></form></body>
+    <script>
+        class Form{
+            constructor(farbe){this.farbe = farbe}
+            info(){console.log("Farbe:"+ this.farbe)}}
+        class Rechteck extends Form{
+            constructor(farbe, höhe,breite){
+                super(farbe)
+                this.höhe = höhe
+                this.breite = breite}
+            fläche(){console.log(this.höhe*this.breite)}
+            info(){console.log("Farbe ist: " + this.farbe)}}
+        let link = " "
+        let regExp = new RegExp("^(?!.*<[^>]+>).*")
+        let arr = new Array()
+        const arr2 = [1,2,3,4,5,6,7,8,9]
+        function ausgeben(){
+            for (let number of arr){// of = Inhalt in == Index
+                document.write(number)}}
+        document.getElementById("berechnen").addEventListener("click", ausgeben())
+        console.log("Test")
+        let th = document.createElement("th")
+        trHead.appendChild(th)
+        document.getElementById("berechnen").addEventListener("click", function(){
+            let xhr = new XMLHttpRequest()
+            let tmp = document.getElementById("celsius").value
+            console.log(tmp)
+            xhr.onload = function(){
+                console.log(xhr.responseText)
+                document.getElementById("erg").innerHTML = xhr.responseText}
+            let qstring = link + "?gewicht=" + gewicht + "&groesse=" + gro
+            xhr.open("Get",qString,true)
+            xhr.send()})
+    </script>
+</html>

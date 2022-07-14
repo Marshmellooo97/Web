@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperaturumrechner</title>
+</head>
+<style>
+    #kasten {
+        width: 30em;
+        background-color: burlywood;
+    }
+
+    .g {
+        margin-top: 1em;
+        background-color: lightgreen;
+        padding: 4px;
+    }
+
+    .mitte {
+        position: absolute;
+        float: center;
+        width: 8em;
+        left: 18em;
+    }
+</style>
+
+<body>
+    <div id="kasten">
+        <fieldset>
+            <div class="g">
+                <fieldset class="g">
+                    <legend>Temperaturumrechner</legend>
+                    <p>Temperatur in Celsius: <Input type="text" id="celsius" class="mitte"></Input></p>
+                    <p> <button>Zurücksetzten</button> <button id="berechnen" class="mitte">Berechnen</button> </p>
+                </fieldset>
+            </div>
+            <div class="g">
+                <p id="erg" class="g">Temperatu in Drad Fahreinheit: ___</p>
+            </div>
+        </fieldset>
+    </div>
+</body>
+<script>
+    let link = " "
+    let regExp = new RegExp("^(?!.*<[^>]+>).*")
+    let arr = new Array()
+    console.log("Test")
+    document.getElementById("berechnen").addEventListener("click", function(){
+        let xhr = new XMLHttpRequest()
+        let tmp = document.getElementById("celsius").value
+        console.log(tmp)
+        xhr.onload = function(){
+            console.log(xhr.responseText)
+            document.getElementById("erg").innerHTML = xhr.responseText
+        }
+        let qstring = link + "?gewicht=" + gewicht + "&groesse=" + gro
+        xhr.open("Get",qString,true)
+        xhr.send()
+
+    })
+
+</script>
+</html>

@@ -1,9 +1,17 @@
 {
-    "name":"Justin",
-    "alter": 18,
-    "Info": {
-        "Straße": "Bla",
-        "Test": 12
+    "Head":{
+        "schule": "Hochschule Filda",
+    "straße": "Leipz",
+    "Stadt": "Fulda",
+    "Dekanin": "B.Bomsdorf"
     },
-    "Arr": [1,2,3,4]
+    "name":"String",
+    "durchwahl": "Int",
+    "zuständigkeit": "String",
+    
+    "Value": [
+        "D.Biezä", 3050, "Ai support",
+        "C.Pape", 379, "Betreuung"
+    ]
+    
 }
